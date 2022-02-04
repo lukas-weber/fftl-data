@@ -340,7 +340,7 @@ def plot_compmax(ax, allmaxs):
         ax.errorbar(maxs[:,0], maxs[:,1]/maxs[0,1], maxs[:,2]/maxs[0,1], label=name, **kwargs)
     xx = np.linspace(12,32,100)
     ax.plot(xx, (xx/12)**(7/4), '--', markersize=0, color='black', label='$ (L/12)^{7/4}$')
-    ax.set_xlabel('L')
+    ax.set_xlabel('$L$')
     ax.set_ylabel('$\\chi_Q^\\mathrm{max}/\\chi_{Q,L=12}^\mathrm{max},~C^\\mathrm{max}/C^\mathrm{max}_{L=12}$')
     ax.set_ylim([None,8])
     ax.set_xlim([10,None])
